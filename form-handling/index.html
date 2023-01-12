@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type ="text/javascript">
+function blurme()
+{
+alert("cursor moved out of the box");
+}
+function focusme()
+{
+alert("cursor moved into the  textbox");
+}
+function selectme()
+{
+alert("user has selcted the text");
+}
+function changeme()
+{
+alert("user has changed the text");
+}
+function invalidme()
+{
+alert("user has entered the name");
+}
+function inputme()
+{
+alert("user has entered the input");
+}
+function resetme()
+{
+alert("user has reset the form");
+}
+function submitme()
+{
+alert("user has submited the form");
+}
+</script>
+</head>
+<body>
+<form method="post" action="thanks.php" onsubmit="submitme()" onreset="resetme()">
+Enter the name<input type="text" id="T1" onblur="blurme()" onselect="selectme()" oninvalid="invalidme()" oninput="inputme()" required  /> <br>
+Enter the age<input text="text" id="T2" onfocus="focusme()" onchange="changeme()"/>
+<input type="submit" value="Register"/>
+<input type="reset" value="clear All"/>
+</form>
+</body>
+</html>
